@@ -12,7 +12,7 @@ after_success:
   - docker build -t arteaga/multi-client ./client
   - docker build -t arteaga/multi-nginx ./nginx
   - docker build -t arteaga/multi-server ./server
-  - docker build -t arteaga/multi-workers ./worker
+  - docker build -t arteaga/multi-worker ./worker
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push tehm to docker hub
